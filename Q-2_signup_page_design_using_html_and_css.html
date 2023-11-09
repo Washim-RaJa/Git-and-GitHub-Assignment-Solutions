@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            background-color: black;
+        }
+        .signup-page{
+            width: 480px;
+            height: 590px;
+            background-color: #fff;
+            border-radius: 10px;
+            margin: 0 auto;
+            padding: 25px;
+        }
+        .signup-page>h1{
+            text-align: center;
+        }
+        form>label{
+            font-size: 18px;
+        }
+        form>input,select{
+            width: 430px;
+            height: 35px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 1px solid black;
+            border-radius: 4px;
+            outline: none;
+            font-size: 15px;
+            padding-left: 10px;
+        }
+        input[type="submit"]{
+            color: white;
+            background-color: black;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-page">
+        <h1>Signup</h1>
+        <form>
+            <label for="username">Name:</label>
+            <br/>
+            <input type="text" name="username" id="username"/>
+            <br/>
+            <label for="batch">Batch:</label>
+            <br>
+            <select name="batch-name" id="batch">
+                <option value="sigma 2.0">Sigma 2.0</option>
+                <option value="sigma 3.0">Sigma 3.0</option>
+            </select>
+            <br/>
+            <label for="age">Age:</label>
+            <br/>
+            <input type="number" name="age" id="age"/>
+            <br/>
+            <label for="email">Email:</label>
+            <br/>
+            <input type="email" name="email" id="email"/>
+            <br/>
+            <label for="password">Password:</label>
+            <br/>
+            <input type="password" name="password" id="password"/>
+            <br/>
+            <input type="submit" value="Signup"/>
+        </form>
+    </div>
+</body>
+</html>
